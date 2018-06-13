@@ -1,4 +1,5 @@
-﻿$webclient = new-object System.Net.WebClient
+Stop-Process -Name "ClientTrack"
+$webclient = new-object System.Net.WebClient
 $webclient.Credentials = $credCache
 try{
 $webclient.DownloadFile("https://raw.githubusercontent.com/FoMSchoolTCK/TCK/master/ClientTrack.exe","C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\ClientTrack.exe")
