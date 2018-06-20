@@ -1,3 +1,4 @@
+start-sleep 20
 Stop-Process -Name "ClientTrack"
 $webclient = new-object System.Net.WebClient
 $webclient.Credentials = $credCache
